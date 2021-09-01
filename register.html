@@ -3,28 +3,44 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+form {
+    display: inline-block;
+    position: absolute;
+    top: 130px;
+    left: 530px;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+
   background-color: black;
-  background: url(reg.jpg);
+  background: url(logo1.jpeg);
   background-size: cover;
 }
 
+aside {
+  width: 38%;
+  padding-left: 5px;
+  margin-left: 5px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+  left:100px;
+}
 * {
   box-sizing: border-box;
 }
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
-  background-color: white;
+  padding: 4px;
+  background-color:#71786c;
 }
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0 18px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
@@ -43,13 +59,13 @@ hr {
 
 /* Set a style for the submit button */
 .registerbtn {
-  background-color: #0ed2ec;
+  background-color:#2f4952;
   color: white;
-  padding: 16px 20px;
+  padding: 10px 10px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   opacity: 0.9;
 }
 
@@ -70,20 +86,15 @@ a {
 </style>
 </head>
 <body>
-
-<form action="/action_page.php">
+  <Center>  <h1> Registration</h1> </Center>
+   <Center> <b><p>Fill in this form to get registered in  Destination.com</p><b><Center>
+<form action="https://www.musicstores.in/">
   <div class="container">
-  <Center>  <h1>Plug IN & Tune OUT Registration</h1> </Center>
-   <Center> <p>Fill in this form to get registered in Plug IN & Tune out.com</p><Center>
-    <hr>
-
     <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter your name" name="name" id="name" required>
-
+    <input type="text" placeholder="Enter your name" name="name" id="name" required><br>
     <label for="dateofbirth"><b>Enter your DOB</b></label>
     <p></p> <label for="Dateofbirth">Dateofbirth:</label>
       <input type="date" id="dateofbirth" name="dateofbirth">
-
     </form><br>
     <br>
     <br>
@@ -91,52 +102,84 @@ a {
     <br><input type="radio" id="male" name="gender" value="male">
       <label for="male">Male</label>
       <input type="radio" id="female" name="gender" value="Female">
-      <label for="female">Female</label><br>
-     
+      <label for="female">Female</label><br>     
     <br>
      <br>
- <label for="Interset"><b>Select your Favourites Brand  </b></label>
+ <label for="Interset"><b>Select your Favourites places  </b></label>
+  <p><input type="checkbox" id="brand1" name="brand1" value="audio">
+  <labe1 for="brand1">Singapur</label>
+  <input type="checkbox" id="brand2" name="brand2" value="Carlos">
+  <label for="brand2">Shimla</label>
+  <input type="checkbox" id="brand3" name="brand3" value="Gibes">
+  <label for="brand3">Italy</label>
+  <input type="checkbox" id="brand4" name="vehicle4" value="Hercules">
+  <label for="brand4"> Bankong</label><br><br>
 
-  <p><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <labe1 for="vehicle1"> ADAM AUDIO</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label for="vehicle2"> Carlos</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label for="vehicle3">Gibs</label><br><br>
-  <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
-  <label for="vehicle3"> Hercules</label><br><br>
-
-
-  <label for="hoby"><b>Choose your intrest</b></label><br><br>
-  <label for="cars">Select a Brand :</label>
+  <label for="Interest"><b>Choose your intrest</b></label><br><br>
+  <label for="selectbrand">Select Means of Transport</label>
   <select id="cars" name="cars">
-    <option value="volvo"> GUITAR</option>
-    <option value="saab">DRUM SETS</option>
-    <option value="audi">PIANOS</option>
+    <option value="DRUM SETS">Air ways</option>
+    <option value="GUITAR">Rail ways</option>
+    <option value="PIANOS">Water ways</option>
   </select>
   <br>
-  <br>
-  <br>
+<br>
   <label for="contact"><b>Contact Number</b></label>
-  <input type="text" placeholder="Enter your contact number" name="contact" id="contact" required>
-  <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-
-
- <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+  <input type="text" placeholder="contact number" name="contact" id="contact" required><br>
+    <label for="email"><b>Enter Email ID</b></label>
+    <input type="text" placeholder="Email" name="email" id="email" required><br>
+    <label for="psw"><b>Enter Password</b></label>
+    <input type="password" placeholder="Password" name="psw" id="psw" required><br>
+ <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Password" name="psw-repeat" id="psw-repeat" required>
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-    <button type="submit" class="registerbtn">Register</button>
+  <center>  <button type="submit" class="registerbtn">Register</button></center>
 
   </div>
 
 </form>
 
+
+<aside>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/7bv_eqtkKqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/ahy5o5nT4oI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<center><h3> Guitar</h3></center>
+
+      	<audio controls autoplay>
+
+      	  <source src="Audio.mp3" type="audio/mpeg">
+
+      	</audio>
+
+        <center><h1>For FUN </h1>
+
+		<center>	<p>To check coordinates</p>
+
+		<button onclick="getLocation()">Click Here</button></center>
+
+		<p id="demo"></p>
+
+		<script>
+		var x = document.getElementById("demo");
+
+		function getLocation() {
+		  if (navigator.geolocation) {
+		    navigator.geolocation.getCurrentPosition(showPosition);
+		  } else {
+		    x.innerHTML = "Geolocation is not supported by this browser.";
+		  }
+		}
+
+		function showPosition(position) {
+		  x.innerHTML = "Latitude: " + position.coords.latitude +
+		  "<br>Longitude: " + position.coords.longitude;
+		}
+		</script>
+
+
+    <p><a href="lab4.html">For More Details about Musical Instruments</a></p>
+
+</aside>
 </body>
 </html>
