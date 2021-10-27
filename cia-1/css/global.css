@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background: #2a6b70;
+}
+
+img#1 {
+    margin-left: 50px;
+    margin-right: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+}
+
+nav {
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+a {
+	color:black;
+	text-decoration: none;
+	font-weight: 4em;
+	font-family: 'Arial';
+	margin-right: 30px;
+  padding: 30px;
+}
+
+
+
+button {
+    width: 20%;
+    height: 40px;
+    background: #506580;
+    color: white;
+    font-size: 2em;
+    border:none;
+}
+
+
+
+h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 2em;
+    font-style: italic;
+}
